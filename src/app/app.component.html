@@ -1,0 +1,10 @@
+<div class="container">
+	<div class="row">
+		<div *ngFor="let color of colors" class="col-12 col-sm-12 col-md-4 col-lg-3 mb-2">
+			<h3>.bg-{{color}}</h3>
+			<div *ngFor="let opacity of opacities" class="">
+				<div class="p-3 {{opacity > 5 ? 'text-white' : ''}} bg-{{color}}-rgba-{{opacity}}">.bg-{{color}}-rgba-{{opacity}}</div>
+			</div>
+		</div>
+	</div>
+</div>
